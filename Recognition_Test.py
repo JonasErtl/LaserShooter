@@ -9,6 +9,11 @@ cap.set(4, 420)
 faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 eyeCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye_tree_eyeglasses.xml")
 
+def Calc_Center(ex, ey):               #Calculates the Rectangle Center Coordinates 
+    res1 = (ex + (0.5 * (ew)))
+    res2 = (ey + (0.5 * (eh)))
+    return (int(res1), int(res2))
+
 
 while True:
     success, img = cap.read()
@@ -26,7 +31,9 @@ while True:
     # drawing bounding box for eyes
     for (ex, ey, ew, eh) in eyes:
         img = cv2.rectangle(img, (ex, ey), (ex+ew, ey+eh), (255, 0, 0), 3)
-        print("Rectangle Center: ", (ex + (ex + ew) / 2),(ey + (ey + eh) / 2))
+        print("Rectangle Center: ", Calc_Center(ex, ey))
+        erst = Calc_Center(ex,ey)
+        img = cv2.circle(img,erst,1,(0,0,255), 3)
 
     cv2.imshow('face_detect', img)
     if cv2.waitKey(10) & 0xFF == ord('q'):
