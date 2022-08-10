@@ -26,7 +26,7 @@ while True:
     # drawing bounding box for eyes
     for (ex, ey, ew, eh) in eyes:
         img = cv2.rectangle(img, (ex, ey), (ex+ew, ey+eh), (255, 0, 0), 3)
-
+        print("Rectangle Center: ", (ex + (ex + ew) / 2),(ey + (ey + eh) / 2))
 
     cv2.imshow('face_detect', img)
     if cv2.waitKey(10) & 0xFF == ord('q'):
