@@ -19,7 +19,7 @@ Ich hab gerade gemerkt, dass das eine dumme Idee ist bei so einem Stream ist vie
 
 Mit Backgroundmask und Bewegungsdetection sollte das vielleicht doch gehen, somit können die falsch positiven stark reduziert werden.
 
-##Mosquito Haar Cascade 
+## Mosquito Haar Cascade 
 
 Da es auf dem Gesamten Internet keine Haar Cascade Models fuer Muecken gibt, was ich ueberhaupt nicht verstehen kann, muss ich jetzt wahrscheinlich selber so nen dreck trainieren, keine Ahnung wie ich das machen soll aber im schlimmsten fall sollte ein Tensorflow model gehen. 
 
