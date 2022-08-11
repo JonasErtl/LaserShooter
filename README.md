@@ -9,7 +9,7 @@ To terminate the program press 'q' on the keyboard
 
 ## Recognition Test
 
-This program will try to make out faces, as well as eyes. Depending on hardware speed there might some lag. To run `cd` into the project directory and run `python Recognition_Test.py` 
+This program will try to make out faces, as well as eyes. Depending on hardware speed there might some lag. To run `cd` into the FaceRecogniton directory and run `python Recognition_Test.py`
 
 ## Mosquito approach 
 
