@@ -26,7 +26,7 @@ Da es auf dem Gesamten Internet keine Haar Cascade Models fuer Muecken gibt, was
 Das ist auch ne dumme Idee Haar Cascades gehen gut fuer sachen wie gesichter, bei sehr kleinen Muecken wird das aber absolut nix. 
 
 ## Transforming picture coordinates to Laser movement
-SSH into your Rasperry Pi `cd` into the Servo Controll Directory and run `pigpiod` to set up hardwaregenerated pwm signals. Then to test the servo run `python3 Servo_test.py`
+SSH into your Rasperry Pi `cd` into the Servo Controll Directory and run `sudo pigpiod` to set up hardwaregenerated pwm signals. Then to test the servo run `python3 Servo_test.py`
 
 Hab ich grade kein Bock mir Gedanken zu mache aber irgedwie vielleicht mit tracking markern und dann
 irgendwie umrechnen keine Ahnung
