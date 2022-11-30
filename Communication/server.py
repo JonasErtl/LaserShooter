@@ -4,7 +4,7 @@ import threading
 HEADER = 64
 PORT = 5050 
 #SERVER = socket.gethostbyname(socket.gethostname()) For some reason this returns 127.0.0.1 on my computer 
-SERVER = "192.168.178.30" #Hardcoded ip address
+SERVER = "192.168.178.44" #Hardcoded ip address
 ADDR = (SERVER, PORT)
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"

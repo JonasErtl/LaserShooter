@@ -10,8 +10,14 @@ ADDR = (SERVER, PORT)
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(ADDR)
 
+def serialize(ser):
+    tp = ser
+    lol = ', '.join(tp)
+    return lol 
+    
 def send(msg):
-    message = msg.encode(FORMAT)
+    ser_msg = serialize(msg)
+    message = ser_msg.encode(FORMAT)
     msg_length = len(message)
     send_length = str(msg_length).encode(FORMAT)
     send_length += b' ' * (HEADER - len(send_length))
