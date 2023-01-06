@@ -30,3 +30,6 @@ SSH into your Rasperry Pi `cd` into the Servo Controll Directory and run `sudo p
 
 Hab ich grade kein Bock mir Gedanken zu mache aber irgedwie vielleicht mit tracking markern und dann
 irgendwie umrechnen keine Ahnung
+
+## Server Communication
+The transport of data happens between the pi and a more powerful computer. The server and client programms can be found in the `Communication` Directory but are not called from there. The client program is startet at the same time as the FaceRecogniton starts. The server is started together with the Servo Movement program. 

@@ -36,7 +36,7 @@ while True:
     # drawing bounding box for eyes
     for (ex, ey, ew, eh) in eyes:
         img = cv2.rectangle(img, (ex, ey), (ex+ew, ey+eh), (255, 0, 0), 3)
-        calc = Calc_Center(ex, ey)
+        calc = Calc_Center(ex, ey,)
         print("Rectangle Center: ", calc)
         send(calc)
         erst = Calc_Center_int(ex,ey)
