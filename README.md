@@ -1,6 +1,5 @@
 ## Mosquito Shooter
-
-Nothing here so far
+To use the program ssh into the Rasperry Pi, run `cd 'Servo Movement'` and then start the server by running `python server.py`. Then on the computer cd into the `FaceRecogniton` Directory and run `python Recognition_Test.py`, then run `python Tracking.py` on the Rasperry Pi again.   
 
 ## Test Script
 To test videostream clone into the repo and run  `python3 cv2_test.py` 
@@ -28,11 +27,6 @@ Das ist auch ne dumme Idee Haar Cascades gehen gut fuer sachen wie gesichter, be
 ## Transforming picture coordinates to Laser movement
 SSH into your Rasperry Pi `cd` into the Servo Controll Directory and run `sudo pigpiod` to set up hardwaregenerated pwm signals. Then to test the servo run `python3 Servo_test.py`
 
-Hab ich grade kein Bock mir Gedanken zu mache aber irgedwie vielleicht mit tracking markern und dann
-irgendwie umrechnen keine Ahnung
-
 ## Server Communication
 The transport of data happens between the pi and a more powerful computer. The server and client programms can be found in the `Communication` Directory but are not called from there. The client program is startet at the same time as the FaceRecogniton starts. The server is started together with the Servo Movement program. 
 
-## Coordinate Conversion
-This is a program which is supposed to convert the left hand based coordinate system into a center based one, which the servos can work with.
