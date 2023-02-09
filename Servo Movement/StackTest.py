@@ -2,7 +2,6 @@ from gpiozero import Servo
 from time import sleep 
 from gpiozero.pins.pigpio import PiGPIOFactory
 
-from server import EXPORT
 
 #Declaring Hardware generated PWM signal
 factory = PiGPIOFactory()

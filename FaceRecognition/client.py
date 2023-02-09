@@ -12,7 +12,7 @@ client.connect(ADDR)
 
 def serialize(ser):
     tp = ser
-    lol = ', '.join(tp)
+    lol = ','.join(tp)
     return lol 
     
 def send(msg):

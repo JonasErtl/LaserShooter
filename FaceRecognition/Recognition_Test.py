@@ -4,7 +4,7 @@ from client import DISCONNECT_MESSAGE, send
 # Enable camera
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
-cap.set(4, 420)
+cap.set(4, 480)
 
 # importing cascades
 faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
@@ -18,7 +18,7 @@ def Calc_Center_int(ex, ey):               #Calculates the Rectangle Center Coor
 def Calc_Center(ex, ey):               #Calculates the Rectangle Center Coordinates 
     res1 = (ex + (0.5 * (ew)))
     res2 = (ey + (0.5 * (eh)))
-    return (str(res1), str(res2))
+    return (str(res1),str(res2))
 
 while True:
     success, img = cap.read()
@@ -36,7 +36,7 @@ while True:
     # drawing bounding box for eyes
     for (ex, ey, ew, eh) in eyes:
         img = cv2.rectangle(img, (ex, ey), (ex+ew, ey+eh), (255, 0, 0), 3)
-        calc = Calc_Center(ex, ey,)
+        calc = Calc_Center(ex,ey)
         print("Rectangle Center: ", calc)
         send(calc)
         erst = Calc_Center_int(ex,ey)

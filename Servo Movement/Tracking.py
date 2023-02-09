@@ -15,9 +15,25 @@ y_value = -1.0 #Only to be used with topServo
 
 sleepTime = 0.3
 
+def conversion_func(index, iszero):
+    if iszero == True:
+        try:
+            return ((320-float(index))*3.125/1000)
+        except:
+            pass
+    else:
+        try:
+            return ((240-float(index))*4.1666666/1000)
+        except:
+            pass
+
+
 while True:
-    bottomServo.value = x_value
-    topServo.value = y_value
+    file1 = open("file.txt","r")
+    lis = file1.read()
+    a = lis.strip().split(',')
+    bottomServo.value = conversion_func(a[0], True)
+    topServo.value = conversion_func(a[-1], False)
 bottomServo.value = None;
 topServo.value = None;
 
