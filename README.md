@@ -1,4 +1,4 @@
-## Mosquito Shooter
+## Laser Shooter
 To use the program ssh into the Rasperry Pi, run `cd 'Servo Movement'` and then start the server by running `python server.py`. Then on the computer cd into the `FaceRecogniton` Directory and run `python Recognition_Test.py`, then run `python Tracking.py` on the Rasperry Pi again.   
 
 ## Test Script
